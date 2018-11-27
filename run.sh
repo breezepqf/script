@@ -17,4 +17,6 @@ elif [ "$type" = ".sh" ]; then
 	bash $1
 elif [ "$type" = ".vhd" ]; then
 	ghdl -r $name
+elif [ "$type" = ".py" ]; then
+	python "$name.py"
 fi
